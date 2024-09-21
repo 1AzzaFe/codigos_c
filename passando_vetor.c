@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
- 
+
+//valgrind --leak-check=full ./nome_programa.c
+//valgrind ./nome_programa.c
 
 int* cria_vetor(int value)
 {
