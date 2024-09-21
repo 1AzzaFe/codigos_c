@@ -1,0 +1,72 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+
+int* cria_vetor(int value)
+{
+
+
+             int *vetor = (int *)malloc(value * sizeof(int));
+
+            
+            for(int i = 0 ; i  <  value ; i++)
+            {
+                
+                scanf("%d", &vetor[i]);
+
+            }
+
+            return vetor;
+
+            
+         
+}
+
+
+void imprime_matriz(int value, int *vetor_imprime)
+{
+
+             
+            for(int i = 0 ; i <  value ; i++)
+            {
+
+
+                printf("Posicao %d do vetor = %d\n", i+1 ,vetor_imprime[i]);
+
+
+            }
+            
+            free(vetor_imprime);
+
+}
+ 
+
+int main()
+{
+
+int n_elementos_matriz;
+ 
+
+        //inicio
+        printf("Escolha a quantidade de elementos do vetor: ");
+        scanf("%d",&n_elementos_matriz);
+
+
+        //nao entendi direiro, mas ponteiro tem como endereço os valores da funçao cria_vetor
+        int *ponteiro = cria_vetor(n_elementos_matriz);
+
+
+        if (cria_vetor == NULL) {
+        return 1;  // Sair se a alocação falhar
+        }
+
+        //chama funçao de impressao
+        imprime_matriz(n_elementos_matriz,ponteiro);
+
+
+        //libera memoria que esta alocada na funçao criada
+        free(ponteiro);
+        return 0;
+ 
+
+}
