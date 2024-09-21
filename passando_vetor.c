@@ -20,8 +20,6 @@ int* cria_vetor(int value)
 
             return vetor;
 
-            
-         
 }
 
 
@@ -38,7 +36,6 @@ void imprime_matriz(int value, int *vetor_imprime)
 
             }
             
-            free(vetor_imprime);
 
 }
  
