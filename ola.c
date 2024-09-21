@@ -3,8 +3,10 @@
 int main()
 {
 
+int numero;
 
-    printf("bom dia amigo tudo bem??");
+    
+        scanf("%d",&numero);
 
 
 }
