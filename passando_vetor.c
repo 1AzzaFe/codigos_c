@@ -44,15 +44,14 @@ int main()
 {
 
 int n_elementos_matriz;
- 
+int *ponteiro;
 
         //inicio
         printf("Escolha a quantidade de elementos do vetor: ");
         scanf("%d",&n_elementos_matriz);
 
-
-        //nao entendi direiro, mas ponteiro tem como endereço os valores da funçao cria_vetor
-        int *ponteiro = cria_vetor(n_elementos_matriz);
+        //ponteiro recebe vetor que é a funçao promiamente dita
+        ponteiro = cria_vetor(n_elementos_matriz);
 
 
         if (cria_vetor == NULL) {
