@@ -93,9 +93,6 @@ typedef struct dado_inicial
 
 
 
-
- 
-
 int main ()
 {     
 
@@ -126,7 +123,7 @@ int main ()
 
     }
 
-    inserir_nome_idade(&pessoa,quantidade_pessoas,quantidade_exames);
+    inserir_nome_idade(pessoa,quantidade_pessoas,quantidade_exames);
 
 
     getchar();
